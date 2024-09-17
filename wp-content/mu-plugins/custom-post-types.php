@@ -22,7 +22,7 @@ function customPostTypes()
     // Her registrere vi vores custom post type for alle dyr
     register_post_type('race', array(
         'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor'),
         'rewrite' => array('slug' => 'race'),
         'has_archive' => true,
         'public' => true,
