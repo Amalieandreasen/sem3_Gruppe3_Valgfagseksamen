@@ -10,20 +10,20 @@
 <body>
     <section class="sellingPointsBar">
         <div class="sellingpoint">
-            <img src="../Assets/Img/ikoner/thumbsUp.svg" alt="Thumbs up ikon" />
+            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/thumbsUp.svg') ?>" alt="Thumbs up ikon" />
             <p>Internat og pension i en</p>
         </div>
         <div class="sellingpoint">
-            <img src="../Assets/Img/ikoner/doktor.svg" alt="Doktor ikon" />
+            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/doktor.svg') ?> " alt="Doktor ikon" />
             <p>Drives af uddannet dyrelæge og veterinærsygeplejerske</p>
         </div>
         <div class="sellingpoint">
-            <img src="../Assets/Img/ikoner/hjerte.svg" alt="Hjerte ikon" />
+            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/hjerte.svg') ?>" alt="Hjerte ikon" />
             <p>Vi elsker alle internatdyr og pensionsdyr ens!</p>
         </div>
     </section>
     <header>
-        <img src="../Assets/Img/Forside/logo.png" alt="logo" class="navlogo" />
+        <img src="<?php echo get_theme_file_uri('/IMG/Forside/logo.png') ?>" alt="logo" class="navlogo" />
         <nav>
             <ul>
                 <li>
