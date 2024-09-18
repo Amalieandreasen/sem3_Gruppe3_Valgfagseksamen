@@ -41,7 +41,7 @@ function dyrFeatures()
 {
     add_theme_support('post-thumbnails');
     add_image_size('dyrImg', 500, 400, true);
-    add_image_size('dyrCard', 200, 200, true);
+    add_image_size('dyrCard', 300, 300, true);
 }
 
 add_action('init', 'customPostTypes');
