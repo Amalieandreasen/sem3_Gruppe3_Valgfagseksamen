@@ -50,72 +50,88 @@ while (have_posts()) {
 
     <section class="animalAttributes">
         <h3><?php the_title() ?>'s Egenskaber</h3>
-        <div class="attribute">
-            <span class="attribute-title">Race:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Alder:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Farve:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Køn:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Højde:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Vægt:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Familievenlig:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Allergivenlig:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Aktivitetsniveu:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Temperemant:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Vaccineret:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Tid ved internat:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
-        <div class="attribute">
-            <span class="attribute-title">Trænet til jagt:</span>
-            <div class="line"></div>
-            <span class="attribute-value">php</span>
-        </div>
+        <?php
+        // Her laves et associative array til foreach loopet som skal køre igennem alle egenskaberne
+        $attributes = [
+            'Alder' => 'alder',
+            'Farve' => 'farver',
+            'Køn' => 'kon',
+            'Højde' => 'hojde',
+            'Vægt' => 'vaegt',
+            'Familievenlig' => 'familievenlig',
+            'Været hos os siden d. ' => 'tid_ved_internat',
+            'Trænet til jagt' => 'traenet_til_jagt'
+        ];
+
+        // Her indsætter vi dataen fra race relationsship. 
+        $relatedRaces = get_field('race');
+        //Koden køres hvis der er en race tilknyttet
+        if ($relatedRaces) { ?>
+            <div class="attribute">
+                <span class="attribute-title">Race:</span>
+                <div class="line"></div>
+
+                <?php
+                // der loopes igennem alle racer og der echoes titlen fra tilknyttet race 
+                foreach ($relatedRaces as $race) { ?>
+                    <span class="attribute-value"> <?php echo get_the_title($race->ID) ?> </span>
+                <?php
+                } ?>
+
+            </div>
+            <?php
+        }
+        // Her loppes igennem alle andre egenskaber der er tilknyttet til hvert dyr
+        foreach ($attributes as $label => $fieldName) {
+            $fieldValue = get_field($fieldName);
+
+
+            if ($fieldValue) {
+            ?>
+                <div class="attribute">
+                    <span class="attribute-title"><?php echo $label ?></span>
+                    <div class="line"></div>
+                    <span class="attribute-value"><?php echo $fieldValue ?></span>
+                </div>
+        <?php
+            }
+        }
+        ?>
     </section>
+
+    <section class="animalAttributes">
+        <h3> Racens Egenskaber</h3>
+
+        <?php
+        $relatedRace = get_field('race');
+
+        if ($relatedRace) {
+            $race = $relatedRace[0];
+
+            $raceAttributes = [
+                'Aktivitetsniveau' => 'aktivitetsniveau',
+                'Allergivenlig' => 'allergivenlig',
+                'Pelstype' => 'pelstype'
+            ];
+
+            foreach ($raceAttributes as $raceLabel => $raceFieldName) {
+                $raceFieldValue = get_field($raceFieldName, $relatedRace[0]);
+
+                if ($raceFieldValue) {
+        ?>
+                    <div class="attribute">
+                        <span class="attribute-title"><?php echo $raceLabel; ?>:</span>
+                        <div class="line"></div>
+                        <span class="attribute-value"><?php echo esc_html($raceFieldValue); ?></span>
+                    </div>
+        <?php
+                }
+            }
+        }
+        ?>
+    </section>
+
+
     <section class="nyVenSec">
         <h3>Din nye ven?</h3>
         <div class="nyVenDiv">
