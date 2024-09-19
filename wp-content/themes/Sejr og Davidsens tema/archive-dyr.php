@@ -7,13 +7,10 @@ get_header();
         <div class="heroTextDiv">
             <h1>Find din nye bedste ven</h1>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-                facere labore amet cum aperiam nihil neque quae, iure voluptate
-                atque dolorum veniam minima qui corporis! Rem numquam recusandae
-                explicabo quis.
+                På denne side kan du se alle vores dyr som venter på at blive adopteret. Du kan klikke ind på alle dyr og læse mere dem og deres egenskaber. Hvis du er i tvivl om adoptionsprocessen kan du klikke på knappen herunder, og læse mere om dette.
             </p>
             <div class="buttonDiv">
-                <a href=""><button class="blueButton">Læs mere om adoptionsprocessen</button></a>
+                <a href="<?php echo site_url('/praktisk-information-omkring-adoption') ?>"><button class="blueButton">Læs mere om adoptionsprocessen</button></a>
             </div>
         </div>
         <div class="heroPic">
@@ -101,7 +98,7 @@ get_header();
             </div>
 
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Egnet til Jagt <span class="pil">&#9660;</span></button>
+                <button type="button" class="dropdownBtn">Trænet til Jagt <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input type="checkbox" name="huntingDog" value="huntingDog" />
