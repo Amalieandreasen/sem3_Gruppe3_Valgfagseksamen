@@ -30,6 +30,6 @@
 
      </div>
      <div class="buttonDiv">
-         <a href=""><button class="blueButton">Se alle vores dyr</button></a>
+         <a href="<?php echo get_post_type_archive_link('dyr') ?>"><button class="blueButton">Se alle vores dyr</button></a>
      </div>
  </section>

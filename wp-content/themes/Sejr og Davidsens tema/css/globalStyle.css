@@ -704,12 +704,14 @@ label{
     max-width: 100%; 
     height: auto; 
     padding-left: 4rem;
+    padding-top: 4rem;
   }
 
   .ownerAndTxtBottom img {
     max-width: 100%; 
     height: auto;
     padding-right: 4rem;
+    padding-top: 4rem;
   }
   
   .ownerDesc {
@@ -826,6 +828,7 @@ padding-top: 4rem;
     justify-content: center; 
     align-items: center; 
     padding: 4rem; 
+    flex-direction: column;
 }
 
 .commentCarouselSec {

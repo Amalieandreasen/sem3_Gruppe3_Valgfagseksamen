@@ -152,6 +152,5 @@ get_header();
             } ?>
         </div>
     </section>
-    <?php include 'cta-dyr.php'; ?>
 </main>
 <?php get_footer(); ?>

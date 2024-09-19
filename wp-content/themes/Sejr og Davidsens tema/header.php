@@ -23,13 +23,15 @@
         </div>
     </section>
     <header>
-        <img src="<?php echo get_theme_file_uri('/IMG/Forside/logo.png') ?>" alt="logo" class="navlogo" />
+        <a href="<?php echo site_url() ?>">
+            <img src="<?php echo get_theme_file_uri('/IMG/Forside/logo.png') ?>" alt="logo" class="navlogo" />
+        </a>
         <nav>
             <ul>
                 <li>
                     <a href="#">Adoption</a>
                     <ul class="dropDownAdoption">
-                        <li><a href="#">Adopter et dyr</a></li>
+                        <li><a href="<?php echo get_post_type_archive_link('dyr') ?>">Adopter et dyr</a></li>
                         <li><a href="#">Praktisk information</a></li>
                     </ul>
                 </li>
