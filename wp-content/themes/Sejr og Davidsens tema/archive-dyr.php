@@ -25,7 +25,7 @@ get_header();
     <section class="filterSection">
         <form id="animalFilterForm" method="GET">
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Dyreart</button>
+                <button type="button" class="dropdownBtn">Dyreart <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input type="checkbox" name="allAnimals" value="All" /> Alle
@@ -40,7 +40,7 @@ get_header();
             </div>
 
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Køn</button>
+                <button type="button" class="dropdownBtn">Køn <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input type="checkbox" name="allGenders" value="All" /> Alle
@@ -55,7 +55,7 @@ get_header();
             </div>
 
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Race</button>
+                <button type="button" class="dropdownBtn">Race <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input type="checkbox" name="allRaces" value="All" /> Alle Racer
@@ -70,15 +70,11 @@ get_header();
                     <label>
                         <input type="checkbox" name="pitbull" value="pitbull" /> Pitbull
                     </label>
-                    <label>
-                        <input type="checkbox" name="dummyBox" value="dummyBox" /> Dummy
-                        Box
-                    </label>
                 </div>
             </div>
 
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Familievenlig</button>
+                <button type="button" class="dropdownBtn">Familievenlig <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input
@@ -105,7 +101,7 @@ get_header();
             </div>
 
             <div class="dropdown">
-                <button type="button" class="dropdownBtn">Egnet til Jagt</button>
+                <button type="button" class="dropdownBtn">Egnet til Jagt <span class="pil">&#9660;</span></button>
                 <div class="dropdownOptions">
                     <label>
                         <input type="checkbox" name="huntingDog" value="huntingDog" />

@@ -29,17 +29,17 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#">Adoption</a>
+                    <a href="#">Adoption <span class="pil">&#9660;</span></a>
                     <ul class="dropDownAdoption">
                         <li><a href="<?php echo get_post_type_archive_link('dyr') ?>">Adopter et dyr</a></li>
-                        <li><a href="#">Praktisk information</a></li>
+                        <li><a href="<?php echo site_url('/praktisk-information-omkring-adoption') ?>">Praktisk information</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Pensionsophold</a>
+                    <a href="#">Pensionsophold <span class="pil">&#9660;</span></a>
                     <ul class="dropDownPension">
-                        <li><a href="#">Daglig rutine</a></li>
-                        <li><a href="#">Book ophold</a></li>
+                        <li><a href="<?php echo site_url('/den-daglige-rutine') ?>">Daglig rutine</a></li>
+                        <li><a href="<?php echo site_url('/book-ophold') ?>">Book ophold</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Adfærdstræning</a></li>
