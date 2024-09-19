@@ -99,24 +99,31 @@ while (have_posts()) {
         ?>
     </section>
 
+
     <section class="animalAttributes">
         <h3> Racens Egenskaber</h3>
 
         <?php
+        // her indsættes dataen fra vores custom post type race, som er et relationsship til dyr
         $relatedRace = get_field('race');
 
+        // Vi kontrollere om der er en relatedRace til dyret
         if ($relatedRace) {
+            //  Her tager vi fat i det første element i arrayet, som i vores tilfælde altid vil være den korrete race, da der kun kan være 1 race tilkoblet
             $race = $relatedRace[0];
 
+            // Her laves et assoativt array m. værdierne fra ACF
             $raceAttributes = [
                 'Aktivitetsniveau' => 'aktivitetsniveau',
                 'Allergivenlig' => 'allergivenlig',
                 'Pelstype' => 'pelstype'
             ];
 
+            // Foreach loop, som looper igenem værdierne fra vores assoiative array hvor relatedRace er den 1 og eneste. ALternativt kunne man bruge ID, hvis der var flere
             foreach ($raceAttributes as $raceLabel => $raceFieldName) {
                 $raceFieldValue = get_field($raceFieldName, $relatedRace[0]);
 
+                // Her oprettes HTML, hvis der er raceFieldValue
                 if ($raceFieldValue) {
         ?>
                     <div class="attribute">
@@ -130,49 +137,8 @@ while (have_posts()) {
         }
         ?>
     </section>
-
-
-    <section class="nyVenSec">
-        <h3>Din nye ven?</h3>
-        <div class="nyVenDiv">
-            <div class="dyr">
-                <img src="../Assets/Img/Forside/dummyDog.png" alt="" />
-                <h4>Bob</h4>
-                <div class="attributeAnimalCTA">
-                    <span class="attributeTitleTime">Tid hos internat:</span>
-                    <div class="lineFEP"></div>
-                    <span class="attributeTimevalueTime">php</span>
-                </div>
-            </div>
-            <div class="dyr">
-                <img src="../Assets/Img/Forside/dummyDog.png" alt="" />
-                <h4>Bob</h4>
-                <div class="attributeAnimalCTA">
-                    <span class="attributeTitleTime">Tid hos internat:</span>
-                    <div class="lineFEP"></div>
-                    <span class="attributeTimevalueTime">php</span>
-                </div>
-            </div>
-            <div class="dyr">
-                <img src="../Assets/Img/Forside/dummyDog.png" alt="" />
-                <h4>Bob</h4>
-                <div class="attributeAnimalCTA">
-                    <span class="attributeTitleTime">Tid hos internat:</span>
-                    <div class="lineFEP"></div>
-                    <span class="attributeTimevalueTime">php</span>
-                </div>
-            </div>
-            <div class="dyr">
-                <img src="../Assets/Img/Forside/dummyDog.png" alt="" />
-                <h4>Bob</h4>
-                <div class="attributeAnimalCTA">
-                    <span class="attributeTitleTime">Tid hos internat:</span>
-                    <div class="lineFEP"></div>
-                    <span class="attributeTimevalueTime">php</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- her inkluderer vi filen cta-dyr hvor cta boks koden ligger i -->
+    <?php include 'cta-dyr.php'; ?>
 </main>
 
 <?php get_footer(); ?>
