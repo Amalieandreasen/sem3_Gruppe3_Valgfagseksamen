@@ -22,32 +22,16 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('DB_NAME', 'local');
 
-if ($_SERVER['SERVER_NAME'] == "sem3valgfageksamen.local") {
-	define('DB_NAME', 'local');
+/** Database username */
+define('DB_USER', 'root');
 
-	/** Database username */
-	define('DB_USER', 'root');
+/** Database password */
+define('DB_PASSWORD', 'root');
 
-	/** Database password */
-	define('DB_PASSWORD', 'root');
-
-	/** Database hostname */
-	define('DB_HOST', 'localhost');
-} else {
-	define('DB_NAME', 'amalieandreasen_comvalgfagseksamen');
-
-	/** Database username */
-	define('DB_USER', 'amalieandreasen_comvalgfagseksamen');
-
-	/** Database password */
-	define('DB_PASSWORD', 'Gruppe3kode');
-
-	/** Database hostname */
-	define('DB_HOST', 'amalieandreasen.com.mysql');
-}
-
-
+/** Database hostname */
+define('DB_HOST', 'localhost');
 
 /** Database charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
