@@ -3,44 +3,72 @@
         <h3>Sejr og Davidsens Dyreinternat</h3>
         <div class="footerIcons">
             <div class="footerLokation">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/lokation.svg') ?>" alt="Lokation ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="40.688" height="54.11" viewBox="0 0 40.688 54.11">
+                    <path id="location-dot-solid_3_" data-name="location-dot-solid (3)" d="M22.855,52.894c5.436-6.8,17.833-23.29,17.833-32.55A20.344,20.344,0,0,0,0,20.344C0,29.6,12.4,46.092,17.833,52.894A3.2,3.2,0,0,0,22.855,52.894ZM20.344,13.563a6.781,6.781,0,1,1-6.781,6.781A6.781,6.781,0,0,1,20.344,13.563Z" />
+                </svg>
+
                 <p>Dyrevej 1, 9210 Aalborg Sø</p>
             </div>
             <div class="footerMobil">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mobil.svg') ?>" alt="mobil ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.44" height="44.44" viewBox="0 0 44.44 44.44">
+                    <path id="phone-solid_1_" data-name="phone-solid (1)" d="M14.312,2.115A3.461,3.461,0,0,0,10.2.1L2.56,2.184A3.482,3.482,0,0,0,0,5.534,38.886,38.886,0,0,0,38.884,44.418a3.482,3.482,0,0,0,3.35-2.56l2.083-7.638A3.461,3.461,0,0,0,42.3,30.106l-8.332-3.472a3.461,3.461,0,0,0-4.019,1.007L26.446,31.92A29.334,29.334,0,0,1,12.5,17.972l4.279-3.5a3.464,3.464,0,0,0,1.007-4.019L14.312,2.123Z" transform="translate(0 0.022)" />
+                </svg>
+
                 <p>12345678</p>
             </div>
             <div class="footerMail">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mail.svg') ?>" alt="Mail ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.818" height="33.613" viewBox="0 0 44.818 33.613">
+                    <path id="envelope-solid_1_" data-name="envelope-solid (1)" d="M4.2,64a4.2,4.2,0,0,0-2.521,7.563L20.728,85.849a2.81,2.81,0,0,0,3.361,0L43.137,71.563A4.2,4.2,0,0,0,40.616,64ZM0,73.8V92.011a5.607,5.607,0,0,0,5.6,5.6H39.215a5.607,5.607,0,0,0,5.6-5.6V73.8L25.77,88.09a5.593,5.593,0,0,1-6.723,0Z" transform="translate(0 -64)" />
+                </svg>
                 <p>sejr@dyreinternat.dk</p>
             </div>
         </div>
     </section>
     <section class="footerLogo">
-        <img class="logo" src="<?php echo get_theme_file_uri('/IMG/Forside/logo.png') ?>" alt="Logo" />
+        <a href="<?php site_url() ?>">
+            <img class="logo" src="<?php echo get_theme_file_uri('/IMG/Forside/logo.png') ?>" alt="Logo" />
+        </a>
         <div class="socialIcons">
-            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/instagram.svg') ?>" alt="Instagram logo" />
-            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/facebook.svg') ?>" alt="Facebook logo" />
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50.759" height="50.57" viewBox="0 0 50.759 50.57">
+                    <path id="facebook_2_" data-name="facebook (2)" d="M50.759,25.379A25.379,25.379,0,1,0,19.253,50.015V33.132H14.018V25.379h5.234V22.038c0-8.635,3.906-12.64,12.392-12.64a27.934,27.934,0,0,1,5.522.634v7.019c-.595-.059-1.636-.1-2.934-.1-4.164,0-5.77,1.576-5.77,5.671v2.756h8.288l-1.428,7.753h-6.87V50.57A25.376,25.376,0,0,0,50.759,25.379Z" />
+                </svg>
+
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="49.777" height="49.766" viewBox="0 0 49.777 49.766">
+                    <path id="instagram_1_" data-name="instagram (1)" d="M24.819,43.949A12.759,12.759,0,1,0,37.579,56.708,12.739,12.739,0,0,0,24.819,43.949Zm0,21.055a8.3,8.3,0,1,1,8.3-8.3A8.31,8.31,0,0,1,24.819,65ZM41.077,43.427A2.976,2.976,0,1,1,38.1,40.451,2.969,2.969,0,0,1,41.077,43.427Zm8.451,3.021c-.189-3.987-1.1-7.518-4.02-10.427S39.067,32.2,35.08,32c-4.109-.233-16.424-.233-20.533,0-3.976.189-7.507,1.1-10.427,4.009S.3,42.45.1,46.436C-.133,50.545-.133,62.86.1,66.969.289,70.956,1.2,74.487,4.12,77.4s6.441,3.82,10.427,4.02c4.109.233,16.424.233,20.533,0,3.987-.189,7.518-1.1,10.427-4.02s3.82-6.441,4.02-10.427C49.761,62.86,49.761,50.556,49.527,46.447Zm-5.308,24.93a8.4,8.4,0,0,1-4.731,4.731c-3.276,1.3-11.049,1-14.669,1s-11.4.289-14.669-1a8.4,8.4,0,0,1-4.731-4.731c-1.3-3.276-1-11.049-1-14.669s-.289-11.4,1-14.669a8.4,8.4,0,0,1,4.731-4.731c3.276-1.3,11.049-1,14.669-1s11.4-.289,14.669,1a8.4,8.4,0,0,1,4.731,4.731c1.3,3.276,1,11.049,1,14.669S45.519,68.113,44.219,71.378Z" transform="translate(0.075 -31.825)" />
+                </svg>
+            </a>
         </div>
     </section>
     <section class="footerPension">
         <h3>Sejr og Davidsens Dyrepension</h3>
         <div class="footerIcons">
             <div class="footerLokation">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/lokation.svg') ?>" alt="Lokation ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="40.688" height="54.11" viewBox="0 0 40.688 54.11">
+                    <path id="location-dot-solid_3_" data-name="location-dot-solid (3)" d="M22.855,52.894c5.436-6.8,17.833-23.29,17.833-32.55A20.344,20.344,0,0,0,0,20.344C0,29.6,12.4,46.092,17.833,52.894A3.2,3.2,0,0,0,22.855,52.894ZM20.344,13.563a6.781,6.781,0,1,1-6.781,6.781A6.781,6.781,0,0,1,20.344,13.563Z" />
+                </svg>
+
                 <p>Dyrevej 1, 9210 Aalborg Sø</p>
             </div>
             <div class="footerMobil">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mobil.svg') ?>" alt="mobil ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.44" height="44.44" viewBox="0 0 44.44 44.44">
+                    <path id="phone-solid_1_" data-name="phone-solid (1)" d="M14.312,2.115A3.461,3.461,0,0,0,10.2.1L2.56,2.184A3.482,3.482,0,0,0,0,5.534,38.886,38.886,0,0,0,38.884,44.418a3.482,3.482,0,0,0,3.35-2.56l2.083-7.638A3.461,3.461,0,0,0,42.3,30.106l-8.332-3.472a3.461,3.461,0,0,0-4.019,1.007L26.446,31.92A29.334,29.334,0,0,1,12.5,17.972l4.279-3.5a3.464,3.464,0,0,0,1.007-4.019L14.312,2.123Z" transform="translate(0 0.022)" />
+                </svg>
+
                 <p>12345678</p>
             </div>
             <div class="footerMail">
-                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mail.svg') ?>" alt="Mail ikon" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.818" height="33.613" viewBox="0 0 44.818 33.613">
+                    <path id="envelope-solid_1_" data-name="envelope-solid (1)" d="M4.2,64a4.2,4.2,0,0,0-2.521,7.563L20.728,85.849a2.81,2.81,0,0,0,3.361,0L43.137,71.563A4.2,4.2,0,0,0,40.616,64ZM0,73.8V92.011a5.607,5.607,0,0,0,5.6,5.6H39.215a5.607,5.607,0,0,0,5.6-5.6V73.8L25.77,88.09a5.593,5.593,0,0,1-6.723,0Z" transform="translate(0 -64)" />
+                </svg>
                 <p>sejr@dyrepension.dk</p>
             </div>
         </div>
     </section>
 </footer>
+<!-- Her defineres footeren så vi kan bruge den i andre filer -->
 <?php wp_footer(); ?>
 </body>
 

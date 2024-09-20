@@ -158,6 +158,7 @@ footer{
 .footerLokation, .footerMobil, .footerMail{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .footerLogo{
@@ -174,6 +175,15 @@ footer{
 .footerPension{
     margin-left: 5rem;
 }
+
+.socialIcons a{
+  text-decoration: none;  
+}
+
+footer svg:hover{
+    fill: var(--globalGreen);
+    cursor: pointer;
+  }
 
 /* blue button */
 
@@ -327,7 +337,7 @@ footer{
     padding-bottom: 2rem;
 }
 
-.attribute-title {
+.attributeTitle {
     font-size: 20px;
     font-weight: bold;
     margin-right: 1rem; 
@@ -338,7 +348,7 @@ footer{
     border-bottom: 1px solid black; 
 }
 
-.attribute-value {
+.attributeValue {
     font-size: 20px;
     margin-left: 1rem; 
 }
@@ -662,7 +672,7 @@ label{
 }
 
 .heroVideo video{
-    max-width: 100%;
+    width: 100%;
 }
 
 .textOverlay {
@@ -990,6 +1000,10 @@ button:hover {
 
     .accordion .contentBox.active .bookOpholdlabel::before{
         content: '-';
+    }
+
+    .accordion .contentBox.active .bookOpholdIndhold:last-child{
+        border-radius: 0 0 30px 30px;
     }
 
     .contentBox hr{

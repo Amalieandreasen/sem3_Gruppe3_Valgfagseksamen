@@ -127,7 +127,7 @@
         </div>
     </div>
 </section>
-<section class="bookPensionsopholdSec">
+<section class="bookPensionsopholdSec" id="bookOphold">
     <div class="bookOpholdGreenSec">
         <h3>Book besøg hos os</h3>
         <div class="bookOpholdDato">

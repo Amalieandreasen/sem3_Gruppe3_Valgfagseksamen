@@ -1,5 +1,6 @@
 <?php
 get_header();
+// Her hentes dataen fra det enkelte dyr, så vi kan bruge det senere
 while (have_posts()) {
     the_post();
 }
@@ -29,7 +30,7 @@ while (have_posts()) {
                     <h3>Book FaceTime</h3>
                 </div>
             </a>
-            <a href="#" class="blueBoxLink">
+            <a href="<?php echo site_url('/praktisk-information-omkring-adoption#bookOphold'); ?>" class="blueBoxLink">
                 <div class="blueBox">
                     <img
                         src="<?php echo get_theme_file_uri('/IMG/singleAnimal/dog.png') ?>"
@@ -69,13 +70,13 @@ while (have_posts()) {
             //Koden køres hvis der er en race tilknyttet
             if ($relatedRaces) { ?>
                 <div class="attribute">
-                    <span class="attribute-title">Race:</span>
+                    <span class="attributeTitle">Race:</span>
                     <div class="line"></div>
 
                     <?php
                     // der loopes igennem alle racer og der echoes titlen fra tilknyttet race 
                     foreach ($relatedRaces as $race) { ?>
-                        <span class="attribute-value"> <?php echo get_the_title($race->ID) ?> </span>
+                        <span class="attributeValue"> <?php echo get_the_title($race->ID) ?> </span>
                     <?php
                     } ?>
 
@@ -90,9 +91,9 @@ while (have_posts()) {
                 if ($fieldValue) {
                 ?>
                     <div class="attribute">
-                        <span class="attribute-title"><?php echo $label ?></span>
+                        <span class="attributeTitle"><?php echo $label ?></span>
                         <div class="line"></div>
-                        <span class="attribute-value"><?php echo $fieldValue ?></span>
+                        <span class="attributeValue"><?php echo $fieldValue ?></span>
                     </div>
             <?php
                 }
@@ -101,45 +102,44 @@ while (have_posts()) {
         </section>
     </div>
 
-    <div class="backgroundSVG">
-        <section class="animalAttributes">
-            <h3> Racens Egenskaber</h3>
 
-            <?php
-            // her indsættes dataen fra vores custom post type race, som er et relationsship til dyr
-            $relatedRace = get_field('race');
+    <section class="animalAttributes">
+        <h3> Racens Egenskaber</h3>
 
-            // Vi kontrollere om der er en relatedRace til dyret
-            if ($relatedRace) {
-                //  Her tager vi fat i det første element i arrayet, som i vores tilfælde altid vil være den korrete race, da der kun kan være 1 race tilkoblet
-                $race = $relatedRace[0];
+        <?php
+        // her indsættes dataen fra vores custom post type race, som er et relationsship til dyr
+        $relatedRace = get_field('race');
 
-                // Her laves et assoativt array m. værdierne fra ACF
-                $raceAttributes = [
-                    'Aktivitetsniveau' => 'aktivitetsniveau',
-                    'Allergivenlig' => 'allergivenlig',
-                    'Pelstype' => 'pelstype'
-                ];
+        // Vi kontrollere om der er en relatedRace til dyret
+        if ($relatedRace) {
+            //  Her tager vi fat i det første element i arrayet, som i vores tilfælde altid vil være den korrete race, da der kun kan være 1 race tilkoblet
+            $race = $relatedRace[0];
 
-                // Foreach loop, som looper igenem værdierne fra vores assoiative array hvor relatedRace er den 1 og eneste. ALternativt kunne man bruge ID, hvis der var flere
-                foreach ($raceAttributes as $raceLabel => $raceFieldName) {
-                    $raceFieldValue = get_field($raceFieldName, $relatedRace[0]);
+            // Her laves et assoativt array m. værdierne fra ACF
+            $raceAttributes = [
+                'Aktivitetsniveau' => 'aktivitetsniveau',
+                'Allergivenlig' => 'allergivenlig',
+                'Pelstype' => 'pelstype'
+            ];
 
-                    // Her oprettes HTML, hvis der er raceFieldValue
-                    if ($raceFieldValue) {
-            ?>
-                        <div class="attribute">
-                            <span class="attribute-title"><?php echo $raceLabel; ?>:</span>
-                            <div class="line"></div>
-                            <span class="attribute-value"><?php echo esc_html($raceFieldValue); ?></span>
-                        </div>
-            <?php
-                    }
+            // Foreach loop, som looper igenem værdierne fra vores assoiative array hvor relatedRace er den 1 og eneste. ALternativt kunne man bruge ID, hvis der var flere
+            foreach ($raceAttributes as $raceLabel => $raceFieldName) {
+                $raceFieldValue = get_field($raceFieldName, $relatedRace[0]);
+
+                // Her oprettes HTML, hvis der er raceFieldValue
+                if ($raceFieldValue) {
+        ?>
+                    <div class="attribute">
+                        <span class="attributeTitle"><?php echo $raceLabel; ?>:</span>
+                        <div class="line"></div>
+                        <span class="attributeValue"><?php echo esc_html($raceFieldValue); ?></span>
+                    </div>
+        <?php
                 }
             }
-            ?>
-        </section>
-    </div>
+        }
+        ?>
+    </section>
     <!-- her inkluderer vi filen cta-dyr hvor cta boks koden ligger i -->
     <?php include 'cta-dyr.php'; ?>
 </main>

@@ -1,64 +1,67 @@
 <?php get_header() ?>
-
-<section class="heroBookOphold">
-    <h1><?php echo get_the_title() ?></h1>
-    <p>
-        <?php echo get_the_content() ?>
-    </p>
-</section>
-<section class="kontaktFlex">
-    <section class="bookKontakt">
-        <div class="greenBox">
-            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/lokation.svg') ?>" alt="Ikon af lokation" />
-            <h3>Adresse:</h3>
-            <p>
-                Dyrevej 1 <br />
-                9210 Aalborg SØ
-            </p>
+<div class="backgroundSVG2">
+    <section class="heroBookOphold">
+        <h1><?php echo get_the_title() ?></h1>
+        <p>
+            <?php echo get_the_content() ?>
+        </p>
+    </section>
+    <section class="kontaktFlex">
+        <section class="bookKontakt">
+            <div class="greenBox">
+                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/lokation.svg') ?>" alt="Ikon af lokation" />
+                <h3>Adresse:</h3>
+                <p>
+                    Dyrevej 1 <br />
+                    9210 Aalborg SØ
+                </p>
+            </div>
+            <div class="greenBox">
+                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mobil.svg') ?>" alt="Ikon af mobil" />
+                <h3>Kontaktoplysninger:</h3>
+                <p>
+                    Tlf: 12345678 <br />
+                    Mail: sejr@dyrepension.dk
+                </p>
+            </div>
+            <div class="greenBox">
+                <img src="<?php echo get_theme_file_uri('/IMG/ikoner/ur.svg') ?>" alt="Ikon af ur" />
+                <h3>Åbningstider:</h3>
+                <p>
+                    mandag - fredag: 10-16 <br />
+                    lørdag: 10-16 <br />
+                    søndag: 15-17
+                </p>
+            </div>
+        </section>
+    </section>
+</div>
+<div class="backgroundSVG">
+    <section class="bookOpholdOmPensionen">
+        <div>
+            <img
+                src="<?php echo get_theme_file_uri('/IMG/bookOphold/omPensionen.png') ?>"
+                alt="Billede af personalet på pensionen" />
         </div>
-        <div class="greenBox">
-            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/mobil.svg') ?>" alt="Ikon af mobil" />
-            <h3>Kontaktoplysninger:</h3>
+        <div>
+            <h3>Om Pensionen</h3>
             <p>
-                Tlf: 12345678 <br />
-                Mail: sejr@dyrepension.dk
+                Pensionen drives af Jesper og Merete, som begge er indkarnerede
+                dyreelskere. Sejr & Davidsens Dyrepension har 4 ansatte udover Jesper
+                og Merete. I vores dyrepension går vi op i at du trygt kan sende dine
+                dyrevenner afsted uden bekymring. Vi sørger for at de aldrig keder sig
+                og og bliver aktiveret præcist som hvis de var derhjemme. Hver hund og
+                kat får deres eget hyggelige “værelse”, men om dagen vil de blive
+                aktiveret sammen med alle dyrevennerne. OBS. vi tager selvfølgelig
+                forbehold for hvis dit dyr skulle have specielle preferencer. Ejeren
+                Merete er uddannet dyrelæge og ejeren Jesper er uddannet
+                veterinærsygeplejerske. Derfor kan du være helt tryg i dit valg da vi
+                har kompetencerne på plads til hvilken som helst situation.
             </p>
-        </div>
-        <div class="greenBox">
-            <img src="<?php echo get_theme_file_uri('/IMG/ikoner/ur.svg') ?>" alt="Ikon af ur" />
-            <h3>Åbningstider:</h3>
-            <p>
-                mandag - fredag: 10-16 <br />
-                lørdag: 10-16 <br />
-                søndag: 15-17
-            </p>
+            <a class="" href="#"><button class="blueButton">Kontakt os i dag</button></a>
         </div>
     </section>
-</section>
-<section class="bookOpholdOmPensionen">
-    <div>
-        <img
-            src="<?php echo get_theme_file_uri('/IMG/bookOphold/omPensionen.png') ?>"
-            alt="Billede af personalet på pensionen" />
-    </div>
-    <div>
-        <h3>Om Pensionen</h3>
-        <p>
-            Pensionen drives af Jesper og Merete, som begge er indkarnerede
-            dyreelskere. Sejr & Davidsens Dyrepension har 4 ansatte udover Jesper
-            og Merete. I vores dyrepension går vi op i at du trygt kan sende dine
-            dyrevenner afsted uden bekymring. Vi sørger for at de aldrig keder sig
-            og og bliver aktiveret præcist som hvis de var derhjemme. Hver hund og
-            kat får deres eget hyggelige “værelse”, men om dagen vil de blive
-            aktiveret sammen med alle dyrevennerne. OBS. vi tager selvfølgelig
-            forbehold for hvis dit dyr skulle have specielle preferencer. Ejeren
-            Merete er uddannet dyrelæge og ejeren Jesper er uddannet
-            veterinærsygeplejerske. Derfor kan du være helt tryg i dit valg da vi
-            har kompetencerne på plads til hvilken som helst situation.
-        </p>
-        <a class="" href="#"><button class="blueButton">Kontakt os i dag</button></a>
-    </div>
-</section>
+</div>
 <section class="bookOpholdAccordionSec">
     <h3>Vigtig viden omkring pensionsophold</h3>
     <div class="accordion">

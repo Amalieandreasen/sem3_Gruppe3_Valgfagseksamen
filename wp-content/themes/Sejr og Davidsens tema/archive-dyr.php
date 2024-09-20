@@ -125,8 +125,10 @@ get_header();
 
     <section class="animals">
         <div class="nyVenDivAdopted">
+            <!-- Her bruges the wordpress the loop, hvor vi går ind og tjekker om der er posts tilknyttet til archive siden -->
             <?php while (have_posts()) {
                 the_post();
+                // her opretttes en variabel til kunne håndtere datoen om hvornår et dyr er indleveret
                 $internatTid = get_field('tid_ved_internat'); ?>
                 <div class="dyr">
                     <a href="<?php echo get_permalink() ?>">
@@ -145,5 +147,6 @@ get_header();
             } ?>
         </div>
     </section>
+
 </main>
 <?php get_footer(); ?>

@@ -54,7 +54,7 @@
         </div>
     </section>
     <div class="buttonDiv">
-        <a href="<?php echo get_post_type_archive_link('#') ?>"><button class="blueButton">Book pensionsophold</button></a>
+        <a href="<?php echo site_url('/book-ophold') ?>"><button class="blueButton">Book pensionsophold</button></a>
     </div>
 </section>
 <section class="dagligRutineCtaSec">

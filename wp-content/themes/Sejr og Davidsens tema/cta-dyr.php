@@ -9,6 +9,7 @@
  <section class="nyVenSec">
      <h3>Din nye ven?</h3>
      <div class="nyVenDiv">
+         <!-- Her bruges wordpress the loop hvor der kigges ind i vores custom query -->
          <?php while ($ctaDyr->have_posts()) {
                 $ctaDyr->the_post();
                 $internatTid = get_field('tid_ved_internat'); ?>
