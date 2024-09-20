@@ -69,6 +69,7 @@
     </section>
 </footer>
 <!-- Her defineres footeren så vi kan bruge den i andre filer -->
+
 <?php wp_footer(); ?>
 </body>
 
