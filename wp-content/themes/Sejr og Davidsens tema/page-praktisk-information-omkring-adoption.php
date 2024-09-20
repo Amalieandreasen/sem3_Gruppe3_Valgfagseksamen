@@ -3,8 +3,9 @@
 Template Name: praktisk information adoption
 */ ?>
 
-<?php get_header() ?>
 
+
+<?php get_header() ?>
 <div class="backgroundSVG2">
     <section class="heroPraktiskInfo">
         <h1><?php echo get_the_title(); ?></h1>
