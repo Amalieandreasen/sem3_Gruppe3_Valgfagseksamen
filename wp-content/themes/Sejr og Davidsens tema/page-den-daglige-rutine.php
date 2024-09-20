@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Den daglige rutine
+*/ ?>
+
 <?php get_header() ?>
 
 <section class="heroDagligRutine">

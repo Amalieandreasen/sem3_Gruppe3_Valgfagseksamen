@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: praktisk information adoption
+*/ ?>
+
 <?php get_header() ?>
 
 <div class="backgroundSVG2">

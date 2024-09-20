@@ -1,3 +1,7 @@
+<?php
+/*
+Template Name: Book Ophold
+*/ ?>
 <?php get_header() ?>
 <div class="backgroundSVG2">
     <section class="heroBookOphold">
