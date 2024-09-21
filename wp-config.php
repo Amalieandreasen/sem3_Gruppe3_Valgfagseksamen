@@ -47,9 +47,6 @@ if ($_SERVER['SERVER_NAME'] == "sem3valgfageksamen.local") {
 	define('DB_HOST', 'amalieandreasen.com.mysql');
 }
 
-
-
-
 /** Database charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
