@@ -1017,7 +1017,7 @@ button:hover {
     }
 
     .bookPensionsopholdSec{
-        background-image: url(../Img/bookOphold/kontaktFormular.png);
+        background-image: url(/Img/bookOphold/kontaktFormular.png);
         background-size: cover;
         padding-block: 3rem;
         margin-top: 3rem;
