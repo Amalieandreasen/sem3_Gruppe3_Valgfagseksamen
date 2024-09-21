@@ -1017,7 +1017,7 @@ button:hover {
     }
 
     .bookPensionsopholdSec{
-        background-image: url("../IMG/bookOphold/kontaktFormular.png");
+        background-image: url("/wp-content/themes/Sejr\ og\ Davidsens\ tema/IMG/bookOphold/kontaktFormular.png");
         background-size: cover;
         padding-block: 3rem;
         margin-top: 3rem;
