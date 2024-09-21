@@ -402,7 +402,7 @@ footer svg:hover{
         left: 50%;
         width: 50rem;
         height: 100%;
-        background-image: url(../Img/SVG/poteSVG.svg);
+        background-image: url("/wp-content/themes/Sejr og Davidsens tema/IMG/SVG/poteSVG.svg");
         background-size: contain; 
         background-repeat: no-repeat, no-repeat;
         background-position: center;
