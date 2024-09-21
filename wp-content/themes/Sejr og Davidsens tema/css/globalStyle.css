@@ -497,15 +497,6 @@ footer svg:hover{
         text-align: center;
     }
 
-    .bookPensionsopholdSec{
-        background-image: url(../Img/bookOphold/kontaktFormular.png);
-        background-size: cover;
-        padding-block: 3rem;
-        margin-top: 3rem;
-        display: flex;
-        justify-content: center;
-    }
-
     .bookOpholdGreenSec h3{
         text-align: center;
     }
@@ -1017,7 +1008,7 @@ button:hover {
     }
 
     .bookPensionsopholdSec{
-        background-image: url("wp-content\themes\Sejr og Davidsens tema\IMG\bookOphold\kontaktFormular.png");
+        background-image: url("/wp-content/themes/Sejr og Davidsens tema/IMG/bookOphold/kontaktFormular.png");
         background-size: cover;
         padding-block: 3rem;
         margin-top: 3rem;
