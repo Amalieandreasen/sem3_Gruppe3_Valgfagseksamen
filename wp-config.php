@@ -41,10 +41,10 @@ if ($_SERVER['SERVER_NAME'] == "sem3valgfageksamen.local") {
 	define('DB_USER', 'amalieandreasen_comvalgfagseksamen');
 
 	/** Database password */
-	define('DB_PASSWORD', ' Eyv96jfz');
+	define('DB_PASSWORD', 'Eyv96jfz');
 
 	/** Database hostname */
-	define('DB_HOST', 'amalieandreasen.com.mysql.service.one.com');
+	define('DB_HOST', 'amalieandreasen.com.mysql');
 }
 
 /** Database charset to use in creating database tables. */
